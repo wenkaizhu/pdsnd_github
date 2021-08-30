@@ -11,7 +11,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 #define month array
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
-
+#define week day array
 DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 TIME_FILTERS=['month', 'day', 'both', 'none']
