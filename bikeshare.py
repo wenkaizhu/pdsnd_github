@@ -1,3 +1,4 @@
+
 import time
 import pandas as pd
 import numpy as np
@@ -21,6 +22,7 @@ TIME_FILTERS_LIB={'month': ['january', 'february', 'march', 'april', 'may', 'jun
               'none':[]}
 
 def _to_list_string(l):
+    #convert list values to string
     l = [word.capitalize() for word in l]
     if len(l) <= 1:
         return ''.join(l)
