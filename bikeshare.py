@@ -1,3 +1,4 @@
+
 import time
 import pandas as pd
 import numpy as np
@@ -8,9 +9,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
+#define month array
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
-
+#define week day array
 DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 TIME_FILTERS=['month', 'day', 'both', 'none']
@@ -21,6 +22,7 @@ TIME_FILTERS_LIB={'month': ['january', 'february', 'march', 'april', 'may', 'jun
               'none':[]}
 
 def _to_list_string(l):
+    #convert list values to string
     l = [word.capitalize() for word in l]
     if len(l) <= 1:
         return ''.join(l)
